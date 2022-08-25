@@ -3,10 +3,10 @@ var swiper = new Swiper(".visual_slide", {
     el: ".swiper-pagination",
     type: "progressbar",
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  }
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // }
 });
 
 var swiper = new Swiper(".best_travel_list", {

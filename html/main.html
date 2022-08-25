@@ -18,6 +18,7 @@
   <meta name="twitter:url" content="http://veryveryhappy.dothome.co.kr/" />
   <meta name="twitter:image:src" content="../img/logo_fa.svg" />
   <!--favicon-->
+  <title>休 &#59; 家</title>
   <link rel="icon" href="../img/logo_fa.svg">
   <link rel="apple-touch-icon" href="../img/logo_fa.svg">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -26,7 +27,6 @@
   <link rel="stylesheet" type="text/css" href="../css/common.css">
   <link rel="stylesheet" type="text/css" href="../css/layout.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <title>休 家</title>
 </head>
 <body>
   <!-- skipMenu start -->
@@ -40,12 +40,14 @@
     <header>
       <nav id="gnb">
         <ul>
-          <li><a href="javascript:void(0)"><img src="../img/hambtn.svg" alt="">전체사이트맵</a></li>
+          <li><a href="javascript:void(0)"><img src="../img/hambtn.svg" alt=""><span class="skip">전체사이트맵</span></a></li>
           <li><a href="javascript:void(0)">국내숙소</a></li>
           <li><a href="javascript:void(0)">즐길거리</a></li>
           <li><a href="javascript:void(0)">교통/항공</a></li>
           <li><a href="javascript:void(0)">해외여행</a></li>
-          <h1 class="logo"><a href="#"><img src="../img/logo.svg" alt="휴가 로고"></a></h1>
+          <li>
+            <h1 class="logo"><a href="#"><img src="../img/logo.svg" alt="휴가 로고"></a></h1>
+          </li>
           <li><a href="javasciprt:void(0)">로그인</a></li>
           <li><a href="javasciprt:void(0)">회원가입</a></li>
           <li><a href="javasciprt:void(0)">예약확인 / 결제</a></li>
@@ -63,17 +65,19 @@
           <div class="swiper-wrapper">
             <!-- slide_01 start-->
             <div class="swiper-slide">
-              <img src="" alt="">
+              <img src="../img/hanok.png" alt="">
               <div class="slide_box">
                 <div>OPEN</div>
                 <p>
                   BAEXANG GALLERY SHOP<br/>GRAND OPEN
                 </p>
-                <a href="javascript:void(0)">MORE </a>
+                <a href="javascript:void(0)">MORE</a>
               </div>
             </div>
             <!-- slide_01 end-->
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">
+              <img src="../img/hanok.png" alt="">
+            </div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
@@ -85,6 +89,82 @@
           <p>
             고객님,<br/><b>어떤 여행을 꿈꾸시나요?</b>
           </p>
+          <div class="tabmenu">
+            <ul class="tab">
+              <li class="on" data-tab="menu_01"><a href="javascript:void(0)">여행지</a></li>
+              <li data-tab="menu_02"><a href="javascript:void(0)">체크인</a></li>
+              <li data-tab="menu_03"><a href="javascript:void(0)">체크아웃</a></li>
+              <li data-tab="menu_04"><a href="javascript:void(0)">여행자</a></li>
+            </ul>
+        
+            <div id="menu_01" class="tabcont on">
+              <div class="location">
+                <input type="text" placeholder="출발지">
+              </div>
+              <div class="location">
+                <input type="text" placeholder="도착지">
+              </div>
+            </div>
+        
+            <div id="menu_02" class="tabcont">
+              <input type="date"/>
+            </div>
+        
+            <div id="menu_03" class="tabcont">
+              <input type="date"/>
+            </div>
+        
+            <div id="menu_04" class="tabcont">
+              <div>
+                <div class="title">
+                  <strong>성인</strong>
+                  <p>만 13세 이상</p>
+                </div>
+                <div class="count_btn">
+                  <input type="button" onclick="countUp();" value="+"></input>
+                  <span id="count">0</span>
+                  <input type="button" onclick="countDown();" value="-">
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <strong>어린이</strong>
+                  <p>만 2~12세</p>
+                </div>
+                <div class="count_btn">
+                  <input type="button" onclick="countUp();" value="+"></input>
+                  <span id="count">0</span>
+                  <input type="button" onclick="countDown();" value="-">
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <strong>유아</strong>
+                  <p>만 2세 미만</p>
+                </div>
+                <div class="count_btn">
+                  <input type="button" onclick="countUp();" value="+"></input>
+                  <span id="count">0</span>
+                  <input type="button" onclick="countDown();" value="-">
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <strong>반려동물</strong>
+                  <a href="javascript:void(0)">보조동물을 동반하시나요?</a>
+                </div>
+                <div class="count_btn">
+                  <input type="button" onclick="countUp();" value="+"></input>
+                  <span id="count">0</span>
+                  <input type="button" onclick="countDown();" value="-">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="tabmenu_btn">SEARCH</button>
         </div>
       </section>
       <!-- visual end -->
@@ -203,6 +283,7 @@
   </div>
 </body>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="../js/swiper.js"></script>
 <script src="../js/header.js"></script>

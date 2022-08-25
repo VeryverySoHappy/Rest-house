@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body, div, header, footer, aside, article, nav, li, ul, ol, form, span, input, img, p, span, em,
+strong, h1, h2, h3, a { margin: 0; padding: 0;}
+header, footer, aside, article, nav, section {display: block;}
+body, input, select {
+  font-size: 16px;
+  color: #222;
+  padding: 0;
+  margin: 0;
+}
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+em, address, i {font-style: normal;}
+strong {font-weight: 400;}
+img, fieldset {border: 0 none;}
+img, input, select {vertical-align: center;}
+a {
+  text-decoration: none;
+  color: #222;
+}
+a:link,
+a:visited {
+  color: #222;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #222;
+  text-decoration: underline;
+}
