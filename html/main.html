@@ -33,6 +33,7 @@
   <div id="skipMenu">
     <a href="#container">본문바로가기</a>
     <a href="#gnb">주메뉴바로가기</a>
+    <a href="#fnb">하단메뉴바로가기</a>
   </div>
   <!-- skipMenu end -->
 
@@ -96,7 +97,6 @@
               <li data-tab="menu_03"><a href="javascript:void(0)">체크아웃</a></li>
               <li data-tab="menu_04"><a href="javascript:void(0)">여행자</a></li>
             </ul>
-        
             <div id="menu_01" class="tabcont on">
               <div class="location">
                 <input type="text" placeholder="출발지">
@@ -105,15 +105,12 @@
                 <input type="text" placeholder="도착지">
               </div>
             </div>
-        
             <div id="menu_02" class="tabcont">
               <input type="date"/>
             </div>
-        
             <div id="menu_03" class="tabcont">
               <input type="date"/>
             </div>
-        
             <div id="menu_04" class="tabcont">
               <div>
                 <div class="title">
@@ -126,7 +123,6 @@
                   <input type="button" onclick="countDown();" value="-">
                 </div>
               </div>
-
               <div>
                 <div class="title">
                   <strong>어린이</strong>
@@ -138,7 +134,6 @@
                   <input type="button" onclick="countDown();" value="-">
                 </div>
               </div>
-
               <div>
                 <div class="title">
                   <strong>유아</strong>
@@ -150,7 +145,6 @@
                   <input type="button" onclick="countDown();" value="-">
                 </div>
               </div>
-
               <div>
                 <div class="title">
                   <strong>반려동물</strong>
@@ -176,10 +170,12 @@
         <div class="swiper best_travel_list">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div><img src="" alt=""><div>1</div></div>
-              <div class="title"><a href="javascript:void(0)">느루스테이</a></div>
-              <div class="hash"> &#35; 한옥 &#35; 독채 &#35; 자쿠지</div>
-              <div class="cost"><strong>350,000</strong>원</div>
+              <div class="img_wrap">
+                <img src="" alt="">
+                <div>1</div>
+              </div>
+              <div class="">느루스테이</div>
+              <div class="hash"></div>
             </div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
@@ -201,53 +197,108 @@
       </section>
       
       <section class="join_review">
-        <a href="javascript:void(0)">
-          <div>JOIN US</div>
-          <p>회원가입 시 적립금 5,000원을 드려요.</p>
-        </a>
-        <a href="javascript:void(0)">
-          <div>REVIEW</div>
-          <p>리뷰를 남겨주시면 적립금을 드려요.</p>
-        </a>
+        <div class="link_box">
+          <a href="javascript:void(0)">
+            <div>JOIN US</div>
+            <p>회원가입 시 적립금 5,000원을 드려요.</p>
+          </a>
+        </div>
+        <div class="link_box">
+          <a href="javascript:void(0)">
+            <div>REVIEW</div>
+            <p>리뷰를 남겨주시면 적립금을 드려요.</p>
+          </a>
+        </div>
       </section>
 
       <section class="region">
-        <h2>BEST TRAVEL OF REGION</h2>
-        <p>요즘 뜨는 지역별 핫한 숙소는?</p>
+        <div class="region_wrap">
+          <div class="region_text">
+            <h2>BEST TRAVEL OF REGION</h2>
+            <p>요즘 뜨는 지역별 핫한 숙소는?</p>
+          </div>
 
+        </div>
       </section>
       
       <section class="sale">
         <div>
           <h2>DAILEY<br/>SALE</h2>
-          <p>24시간 한정 특가</p>
+          <p class="sale_text">24시간 한정 특가</p>
           <p>망설이면 늦어요!</p>
         </div>
         <div>
-          <img src="" alt="">
-          <div class="title"><a href="javascript:void(0)">느루스테이</a></div>
-          <div class="hash"> &#35; 한옥 &#35; 독채 &#35; 자쿠지</div>
-          <div class="pre_cost">360,000<span>원</span></div>
-          <div class="cost"><span>50&#37;</span><strong>180,000</strong>원</div>
+          <a href="javascript:void(0)">
+            <img src="../img/Rectangle 46.png" alt="">
+            <div class="sale_left">
+              <div class="residence">느루스테이</div>
+              <div class="hash"> &#35; 한옥 &#35; 독채 &#35; 자쿠지</div>
+            </div>
+            <div class="sale_right">
+              <del class="pre_cost">360,000<span>원</span></del>
+              <div class="cost"><span>50&#37;</span><strong>180,000</strong>원</div>
+            </div>
+          </a>
         </div>
       </section>
       
       <section class="award">
-        <h2>SNS  REVIEW AWARD</h2>
-        <p>이번주 적립금 30,000원을 받은 리뷰 :)</p>
-        <div>
-          <ul>
-            <li class="youtube"></li>
-            <li><a href="javascript:void(0)"><img src="" alt=""></a></li>
-            <li><a href="javascript:void(0)"><img src="" alt=""></a></li>
-            <li><a href="javascript:void(0)"><img src="" alt=""></a></li>
-          </ul>
+        <div class="award_wrap">
+          <h2>SNS  REVIEW AWARD</h2>
+          <p>이번주 적립금 30,000원을 받은 리뷰 :)</p>
+          <div>
+            <ul>
+              <li class="youtube">
+                <a href="javascript:void(0)">
+                  <img src="../img/Rectangle 19 (1).png" alt="">
+                  <div class="layer layer01">
+                    <div>
+                      <em>YOUTUBE<br/>AWARD</em>
+                      <div>1</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="../img/Rectangle 62.png" alt="">
+                  <div class="layer">
+                    <div>
+                      <em>PHOTO<br/>AWARD</em>
+                      <div>1</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="../img/Rectangle 65.png" alt="">
+                  <div class="layer">
+                    <div>
+                      <em>PHOTO<br/>AWARD</em>
+                      <div>2</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <img src="../img/Rectangle 64.png" alt="">
+                  <div class="layer">
+                    <div>
+                      <em>PHOTO<br/>AWARD</em>
+                      <div>3</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <h2>하단 메뉴 및 사이트 정보</h2>
-      <article>
+      <nav id="fnb">
         <ul>
           <li><a href="javascript:void(0)">회사소개</a></li>
           <li><a href="javascript:void(0)">개인정보처리방침</a></li>
@@ -258,10 +309,10 @@
           <li><a href="javascript:void(0)">여행플래너</a></li>
           <li><a href="javascript:void(0)">대리점개설문의</a></li>
         </ul>
-      </article>
-      <article class="">
-        <img src="../img/logo.svg" alt="logo">
+      </nav>
+      <article>
         <div>
+          <img src="../img/logo.svg" alt="logo">
           <p>
             COMPANY : 휴 ; 가   OWNER : 이주희   TEL : 010-1111-1111<br/>
             BUSINESS LICENSE : 010-1111-11111   ONLINE ORDER LICENSE : 1111-1111-1111<br/>
@@ -270,8 +321,8 @@
         </div>
         <div>
           <p>CUSTOMER CENTER</p>
-          <p>02 - 1111 - 1111</p>
-          <p>
+          <a href="tel:010-2631-0368" class="number">02 - 1111 - 1111</a>
+          <p class="time">
             MON-FRI AM 10:00 - PM 17:00<br/>
             LUNCH PM 12:00 - PM 13:00<br/>
             SAT.SUN.HOLIDAY closed
