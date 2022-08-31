@@ -1,12 +1,11 @@
 var swiper = new Swiper(".visual_slide", {
+  effect: "fade",
+  loop: true,
+  centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
   },
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // }
 });
 
 var swiper = new Swiper(".best_travel_list", {
