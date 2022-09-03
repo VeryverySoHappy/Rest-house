@@ -11,20 +11,63 @@ $(function() {
 // tab end
 
 // count start
-  var count = 0;
+var count01=0;
+var count02=0;
+var count03=0;
+var count04=0;
+var count05=1250;
 
-  var countUp= function(){
-    count = count + 1;
-    // document.querySelector('#count_04').innerText=count;
-    document.querySelector('.count').children[i].innerText=count
-  };
+var countUp01=function(){
+  count01=count01+1;
+  document.querySelector("#count01").innerText=count01;
+};
 
-  var countDown = function(){
-    if(count>0){
-      count = count-1;
-      document.querySelector('#count').innerText=count;
-    }
-  };
+var countUp02=function(){
+  count02=count02+1;
+  document.querySelector("#count02").innerText=count02;
+};
+
+var countUp03=function(){
+  count03=count03+1;
+  document.querySelector("#count03").innerText=count03;
+};
+
+var countUp04=function(){
+  count04=count04+1;
+  document.querySelector("#count04").innerText=count04;
+};
+var countUp05=function(){
+  count05=count05+1;
+  document.querySelector("#count05").innerText=count05;
+};
+
+var countDown01=function(){
+  if(count01!==0){
+      count01=count01-1;        
+      document.querySelector("#count01").innerText=count01;
+  }
+};
+
+var countDown02=function(){
+  if(count02!==0){
+      count02=count02-1;        
+      document.querySelector("#count02").innerText=count02;
+  }
+};
+
+var countDown03=function(){
+  if(count03!==0){
+      count03=count03-1;        
+      document.querySelector("#count03").innerText=count03;
+  }
+};
+
+var countDown04=function(){
+  if(count04!==0){
+      count04=count04-1;        
+      document.querySelector("#count04").innerText=count04;
+  }
+};
 // count end
 
 // region start
@@ -72,7 +115,7 @@ $(document).ready(function(){
       e.preventDefault();
       var temp = indexNum-1;
       if(temp<0){
-        temp=3
+        temp=5
       }
       $('.product_list > li > a').eq(temp).trigger('click');
     }
@@ -81,7 +124,7 @@ $(document).ready(function(){
     click:function(e){
       e.preventDefault();
       var temp = indexNum+1;
-      if(temp>3){
+      if(temp>5){
         temp=0
       }
       $('.product_list > li > a').eq(temp).trigger('click');
