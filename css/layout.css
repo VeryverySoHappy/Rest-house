@@ -1,3 +1,17 @@
+/* body scroll start */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #cccccc;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+/* body scroll end */
+
 /* header start  */
 header {
   width: 100%;
@@ -110,7 +124,6 @@ input#sidebar {
   visibility: hidden;
   z-index: 2;
 }
-
 /* background end */
 
 /* input:checked start*/
